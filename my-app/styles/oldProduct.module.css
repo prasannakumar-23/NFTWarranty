@@ -1,0 +1,200 @@
+.login {
+  height: 220vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background: linear-gradient(267.45deg, #05d5ff -34.23%, #53f 99.39%);
+}
+
+.loginTitle {
+  margin: 10px auto;
+  font-size: 70px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+}
+
+.label {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.textarea {
+  background-color: white;
+  font-size: 19px;
+}
+
+.loginForm {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.loginForm > label {
+  margin: 10px 0;
+}
+
+.loginInput {
+  padding: 10px;
+  background-color: white;
+  border: 1px solid;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.loginButton {
+  margin-top: 20px;
+  background: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  color: blue;
+  padding: 10px;
+  font-size: large;
+}
+
+.loginButton:disabled {
+  cursor: not-allowed;
+  background-color: lightcoral;
+}
+
+@media screen and (max-width: 480px) {
+  .login {
+    width: 100%;
+    height: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  .loginButton,
+  .loginButton:disabled,
+  .loginForm,
+  .loginTitle,
+  .loginInput,
+  .textarea {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.loginImg {
+  width: 300px;
+  height: 200px;
+}
+.loginhone {
+  font-size: 100px;
+  color: white;
+}
+.loginhhtwo {
+  font-size: 50px;
+  color: white;
+}
+.loginpone {
+  font-size: 40px;
+  color: white;
+}
+.loginButton:disabled {
+  cursor: not-allowed;
+  background-color: lightcoral;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+}
+
+.leftcolumn {
+  width: 65%;
+  position: relative;
+}
+
+.rightcolumn {
+  width: 35%;
+  margin-top: 60px;
+}
+
+.leftcolumn img {
+  width: 100%;
+}
+
+.leftcolumn img.active {
+  opacity: 1;
+}
+
+.rightcolumn h2 {
+  font-size: 40px;
+  color: #faeded;
+}
+.rightcolumn p {
+  font-size: 30px;
+  color: #faeded;
+}
+.tablea {
+  background-color: white;
+  border-collapse: swhite;
+  border: 1px solid blue;
+  width: 100%;
+}
+.tra {
+  border: 1px solid black;
+  color: blue;
+  padding: 20px;
+  text-align: center;
+}
+.tda {
+  border: 1px solid black;
+  color: blue;
+  padding: 20px;
+}
+
+.text {
+  text-align: center;
+}
+
+/* Control the left side */
+.left {
+  width: 100%;
+  height: 2%;
+  position: relative;
+  left: -15%;
+  background-color: black;
+}
+
+/* Control the right side */
+.right {
+  position: relative;
+  height: 2%;
+  width: 100%;
+
+  right: -15%;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: relative;
+  top: 60%;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 300px;
+  height: 300px;
+  object-fit: fill;
+}
+
+@media screen and (max-width: 480px) {
+  .login {
+    width: 100%;
+    height: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  .loginButton,
+  .loginButton:disabled,
+  .loginForm,
+  .loginTitle,
+  .loginInput,
+  .textarea {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}

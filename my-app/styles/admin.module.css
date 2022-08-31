@@ -1,0 +1,162 @@
+.html,
+.body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 80vh;
+  align-items: center;
+  background: linear-gradient(267.45deg, #05d5ff -34.23%, #53f 99.39%);
+}
+
+.gloww {
+  align-items: center;
+  width: 220px;
+  height: 70px;
+  border: none;
+  outline: none;
+  color: blue;
+  background-color: white;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.gloww:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 0px;
+}
+
+.gloww:active {
+  color: #000;
+}
+
+.gloww:active:after {
+  background: transparent;
+}
+
+.gloww:hover:before {
+  opacity: 1;
+}
+
+.gloww:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #faeded;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.top {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(267.45deg, #05d5ff -34.23%, #53f 99.39%);
+  position: sticky;
+  top: 0;
+  /* display: flex; */
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+  z-index: 999;
+}
+
+.topLeft,
+.topRight {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topCenter {
+  flex: 6;
+}
+
+.topImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.topIcon {
+  font-size: 20px;
+  margin-right: 20px;
+  color: #444;
+  cursor: pointer;
+  cursor: pointer;
+}
+
+.topListItem {
+  flex: 3;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-right: 20px;
+  font-size: 50px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.topSearchIcon {
+  font-size: 18px;
+  color: #666;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.loginInput {
+  padding: 10px;
+  background-color: white;
+  border: 1px solid;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 480px) {
+  .body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    border-radius: 10px; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  .gloww,
+  .loginButton:disabled {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+}
